@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>五子棋</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+<div class="door">
+    <div class="doorr"></div>
+    <div class="door1"></div>
+    <div class="door2"></div>
+</div>
+<div class="shadow"></div>
+
+<audio src="img/13a828dc57.mp3" id="audio"></audio>
+<!--按钮-->
+<div class="button-wrapper">
+    <a href="#" class="a-btn" id="start">
+        <span class="a-btn-text">开始游戏</span>
+        <span class="a-btn-slide-text">It's free!</span>
+        <span class="a-btn-icon-right"><span></span></span>
+    </a>
+    <a href="#" class="a-btn" id="people">
+        <span class="a-btn-text">人人博弈</span>
+        <span class="a-btn-slide-text">Sign up!</span>
+        <span class="a-btn-icon-right"><span></span></span>
+    </a>
+    <a href="#" class="a-btn" id="machine">
+        <span class="a-btn-text">人机博弈</span>
+        <span class="a-btn-slide-text">Log in!</span>
+        <span class="a-btn-icon-right"><span></span></span>
+    </a>
+    <a href="#" class="a-btn" id="restart">
+        <span class="a-btn-text" >重新开始</span>
+        <span class="a-btn-slide-text">For free!</span>
+        <span class="a-btn-icon-right"><span></span></span>
+    </a>
+</div>
+<!--画布-->
+<canvas width="450" height="450" id="canvas"></canvas>
+<!--背景-->
+<div class="cvas">
+    <div class="Gomoku">Gomoku</div>
+    <div class="pieces">
+        <div class="blackP"></div>
+        <div class="whiteP"></div>
+    </div>
+    <div class="time">
+        <div class="black">
+            <canvas width="100" height="100" class="blackTime"></canvas>
+        </div>
+        <div class="white">
+            <canvas width="100" height="100" class="whiteTime"></canvas>
+        </div>
+    </div>
+</div>
+<!--输赢提示信息-->
+<div class="winner">
+    <div class="close"></div>
+    <p>恭喜您赢了！</p>
+    <div class="outin">
+        <div class="exit">退出游戏</div>
+        <div class="enter">继续游戏</div>
+    </div>
+</div>
+<div class="loser">
+    <div class="close"></div>
+    <p>遗憾您输了！</p>
+    <div class="outin">
+        <div class="exit">退出游戏</div>
+        <div class="enter">继续游戏</div>
+    </div>
+</div>
+</body>
+</html>
+
+<!--加秒表分别给黑白棋计时-->
